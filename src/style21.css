@@ -1,0 +1,68 @@
+.wrapper_2 {
+  /* background: red; */
+  /* border: 2px solid yellow; */
+  text-align: center;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+/* .img {
+  display: inline-block;
+  max-width: 100%;
+  align-self: flex-start;
+  border: 2px solid blue;
+} */
+
+.img_1::before,
+.img_1::after {
+  content: "01";
+  position: absolute;
+  /* background: yellow; */
+  width: 20%;
+  z-index: 1;
+  top: 4em;
+  left: 0.5em;
+  font-size: 3rem;
+  color: white;
+}
+
+.img_2::before,
+.img_2::after {
+  content: "02";
+  position: absolute;
+  /* background: yellow; */
+  width: 20%;
+  z-index: 1;
+  top: 4em;
+  left: 0.5em;
+  font-size: 3rem;
+  color: white;
+}
+
+.img_3::before,
+.img_3::after {
+  content: "03";
+  position: absolute;
+  /* background: yellow; */
+  width: 20%;
+  z-index: 1;
+  top: 4em;
+  left: 0.5em;
+  font-size: 3rem;
+  color: white;
+}
+
+.img_4::before,
+.img_4::after {
+  content: "04";
+  position: absolute;
+  /* background: yellow; */
+  width: 20%;
+  z-index: 1;
+  top: 4em;
+  left: 0.5em;
+  font-size: 3rem;
+  color: white;
+}

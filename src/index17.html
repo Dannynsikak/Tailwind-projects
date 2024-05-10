@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      @media (max-width: 1250px) {
+        .row {
+          display: block;
+        }
+        .hero,
+        .primary_content,
+        .side_bar {
+          width: 100%;
+        }
+        .hero_img {
+          margin-top: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body class="box-border text-[1rem]">
+    <header class="p-[1em_3em] font-body text-[1.5rem] bg-[#136c72] text-white">
+      <div class="logo container flex *:self-center *:mr-[1em] *:flex-1">
+        <a href="">
+          <img src="../images/logo.svg" alt="conquering responsiveness"
+        /></a>
+        <nav class="flex justify-between *:self-center">
+          <ul class="flex *:mr-[1em] font-medium *:whitespace-nowrap m-auto">
+            <li class="hover:opacity-30"><a href="#">Home</a></li>
+            <li class="hover:opacity-30"><a href="#">About</a></li>
+            <li class="hover:opacity-30"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="flex *:self-center">
+            <li class="hover:opacity-30 mr-[1em] whitespace-nowrap">
+              <a href="#">Sign In</a>
+            </li>
+            <li
+              class="inline-block hover:opacity-30 bg-white rounded-full text-[#136c72] p-[.2em_1em] whitespace-nowrap"
+            >
+              <a href="#">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="p-[4em] bg-[#23424a]">
+      <div class="w-[80%] max-w-screen-lg">
+        <div class="row flex text-white justify-evenly container m-auto">
+          <div class="hero font-body">
+            <h1 class="font-black text-[3rem]">
+              Responsive layouts don’t have to be a struggle
+            </h1>
+            <p class="text-[1.5rem] font-normal mb-[1em]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <a
+              href=""
+              class="inline-block bg-[#38cfd9] p-[1em_3em] rounded-full uppercase text-[1rem] font-black text-black whitespace-nowrap focus:opacity-30"
+              >I want to learn</a
+            >
+          </div>
+          <img
+            class="hero_img inline-block self-start max-w-[100%]"
+            src="../challenge01/02-6 - challenge 2/img/hero-img.jpg"
+            alt="graphic-sketch"
+          />
+        </div>
+      </div>
+    </div>
+    <main class="font-body p-[3em_3em] bg-green-500 m-auto w-[100%]">
+      <div
+        class="wrapper_1 bg-red-500 border-4 border-current w-[90%] m-[0_auto]"
+      >
+        <div
+          class="row flex gap-5 justify-between *:border-2 *:border-green-500"
+        >
+          <section
+            class="primary_content *:text-[1.5rem] self-start border-2 border-yellow-500 w-[50%]"
+          >
+            <div>
+              <h1 class="text-[3rem] text-[#87629a] font-black">
+                Quality designs made custom, on demand, just for you
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+              <p class="mt-[1.5em]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+          </section>
+          <aside
+            class="side_bar p-[1em] w-[30%] bg-[#136c72] text-white text-center text-[1rem]"
+          >
+            <div>
+              <h1 class="text-[3rem] font-black">Cheap</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+              <h1 class="text-[3rem] font-black pt-[.5em]">Quick</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+              <h1 class="text-[3rem] font-black pt-[.5em]">Quality</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

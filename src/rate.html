@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rating</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      .rating {
+        display: inline-block;
+      }
+      .rating input {
+        display: none;
+      }
+      .rating label {
+        float: inline-end;
+        cursor: pointer;
+        color: gray;
+      }
+      .rating label::before {
+        content: "\2605";
+        font-size: 5rem;
+      }
+      .rating input:checked ~ label {
+        color: orange;
+      }
+      .rating label:hover::before,
+      .rating label:hover ~ label::before {
+        content: "\2605";
+        color: orange;
+      }
+      .rating input:checked ~ label::before {
+        content: "\2605";
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container m-auto flex justify-center">
+      <div class="rating">
+        <label for="star5"></label
+        ><input type="radio" id="star5" name="rating" value="5" /><label
+          for="star4"
+        ></label
+        ><input type="radio" id="star4" name="rating" value="4" /><label
+          for="star3"
+        ></label
+        ><input type="radio" id="star3" name="rating" value="3" /><label
+          for="star2"
+        ></label
+        ><input type="radio" id="star2" name="rating" value="2" /><label
+          for="star1"
+        ></label
+        ><input type="radio" id="star1" name="rating" value="1" />
+      </div>
+    </div>
+    <div>
+      <ul class="*:list-outside selection:bg-red-400 first-line:bg-red-400">
+        <li>open</li>
+        <li>close</li>
+        <li>deaf</li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>

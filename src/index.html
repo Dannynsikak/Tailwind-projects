@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="w-full h-screen bg-[#2F1893] py-[10rem] bg-no-repeat bg-cover md:max-w-[42px] lg:max-w-full sm:max-w-full justify-start"
+      style="background-image: url(../images/1Background.png)"
+    >
+      <div
+        class="w-[470px] h-[570px] bg-[#FFFFFF] m-auto rounded-[15px] py-[58px] md:w-[470px] lg:w-[470px] sm:w-[2s70px] sm:flex-col"
+      >
+        <div class="ml-10">
+          <form action="get">
+            <div class="flex flex-row">
+              <div>
+                <label class="text-[#1E0E62] text-xl" for="boy">YOUR NAME</label
+                ><br />
+                <br />
+                <input
+                  type="text"
+                  id="boy"
+                  class="w-[200px] h-[50px] rounded-full border-2 border-[#EBEAED] pl-5 outline-[#1E0E62] placeholder:text-xl"
+                  placeholder="First name"
+                />
+              </div>
+
+              <div class="ml-10 select-none">
+                <label class="text-[#1E0E62] text-xl" for="sample"
+                  >BUDGET</label
+                >
+                <br />
+                <br /><select
+                  name=""
+                  id="sample"
+                  class="w-[140px] h-[50px] rounded-full pl-5 text-[#1E0E62] outline-[#1E0E62] bg-white border-2 border-[#EBEAED] text-xl"
+                >
+                  <option value="$500">#500</option>
+                  <option value="$400">$400</option>
+                  <option value="$300">$300</option>
+                  <option value="$200">$200</option>
+                  <option value="$100">$100</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-10">
+              <label class="text-[#1E0E62] text-xl" for="ofonime"
+                >INPUT FIELD</label
+              >
+              <br />
+              <br />
+              <input
+                type="email"
+                id="ofonime"
+                class="w-[370px] h-[50px] rounded-full border-2 border-[#EBEAED] pl-5 placeholder:text-xl outline-[#1E0E62]"
+                placeholder="name@mail.com"
+              />
+            </div>
+            <div class="mt-5">
+              <label class="text-[#1E0E62] text-xl" for="cost"
+                >YOUR MESSAGE</label
+              ><br /><br /><textarea
+                name=""
+                id="cost"
+                cols="35"
+                rows="4"
+                class="border-2 border-[#EBEAED] resize-none rounded-md placeholder:text-l pl-3 outline-[#1E0E62] placeholder:italic italic caret-pink-500"
+                placeholder="YOUR MESSAGE"
+              ></textarea>
+            </div>
+            <div class="space-x-3 flex flex-row mt-5">
+              <input
+                type="checkbox"
+                name="checked"
+                id="madrid"
+                class="w-[20px] h-[20px] animate-bounce rounded-md text-[#25DAC5]"
+              />
+              <label class="text-[#15143966] text-l" for="madrid"
+                >Send me a copy</label
+              >
+              <div class="pl-20 -mt-2">
+                <button
+                  class="w-[120px] h-[50px] bg-gradient-to-r from-indigo-500 to-[#25DAC5] rounded-full text-l text-white hover:bg-[#d7d6d8] animate-pulse cursor-progress"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="w-10 h-10 m-auto animate-bounce">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 stroke-cyan-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+            />
+          </svg>
+        </div>
+        <div class="bg-yellow-700 w-full h-[130px]">
+          <button
+            class="border-2 w-60 whitespace-nowrap border-red-600 rounded-full text-white"
+          >
+            select this options chidera
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="output.css" /> -->
+    <style>
+      .nav-toggle {
+        cursor: pointer;
+        border: 0;
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0em;
+        background-color: #072a2d;
+        border-radius: 50%;
+        color: white;
+        transition: opacity 500ms ease;
+        /* transition-delay: 70s; */
+        position: absolute;
+        left: 0.5em;
+      }
+      .hamburger {
+        width: 50%;
+        position: relative;
+        /* background-color: slategrey; */
+      }
+
+      .hamburger,
+      .hamburger::before,
+      .hamburger::after {
+        display: block;
+        margin: 0 auto;
+        height: 3px;
+        background: gainsboro;
+      }
+      .hamburger::before,
+      .hamburger::after {
+        content: "";
+        width: 100%;
+      }
+      .hamburger::before {
+        transform: translateY(-6px);
+      }
+
+      .hamburger::after {
+        transform: translateY(3px);
+      }
+      .nav {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+      }
+
+      .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+      }
+      /* .name :hover {
+        transition-property: red;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 5s;
+        font-size: 3rem;
+      } */
+      @media (min-width: 768px) {
+        .nav-toggle {
+          display: none;
+        }
+        /* .nav__list {
+          margin: 0 0 0 7em;
+        } */
+
+        /* .nav {
+          visibility: visible;
+          display: flex;
+          height: auto;
+          align-items: center;
+          position: relative;
+          background-color: red;
+        } */
+        /* .nav {
+          margin: 0 0 0 1.5em;
+        } */
+        /* .nav__list {
+          display: flex;
+          margin: 0;
+          align-items: center;
+        } */
+        /* .row {
+          display: flex;
+          justify-content: space-between;
+        } */
+      }
+    </style>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="box-border text-[1.3rem]">
+    <header class="bg-[#136c72] p-[3em_0]">
+      <div
+        class="w-[80%] max-w-[1000px] m-[0_auto] text-center md:flex md:justify-between md:items-center"
+      >
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span></button
+        ><a href="#" class="inline-block"
+          ><img class="" src="./nav-challenge (1)/img/logo.svg" alt="nav logo"
+        /></a>
+        <nav
+          class="nav md:visible md:flex md:h-auto md:relative md:space-y-0 font-body font-bold text-[1.3rem] text-white space-y-5"
+        >
+          <ul
+            class="space-y-2 md:mr-[1em] md:space-x-5 md:flex md:space-y-0 md:items-center"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <ul
+            class="space-y-2 md:space-x-5 md:visible md:flex md:space-y-0 md:items-center nav__list"
+          >
+            <li><a href="">Sign In</a></li>
+            <li
+              class="inline-block p-[.5em_2em] rounded-full text-[#136c72] sm:text-[1.5rem] bg-[white]"
+            >
+              <a href="">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="bg-[#23424A] p-[3em_0]">
+      <div
+        class="w-[80%] max-w-[1000px] m-[0_auto] space-y-10 lg:flex lg:gap-10"
+      >
+        <div class="text-white space-y-10">
+          <h1
+            class="text-[2rem] sm:text-[3rem] font-body font-black m-[0] leading-tight"
+          >
+            Responsive layouts don’t have to be a struggle
+          </h1>
+          <p class="text-[1.3rem] font-body font-normal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+          </p>
+          <a
+            href="#"
+            class="name bg-[#38cfd9] text-[1rem] sm:text-[1.5rem] uppercase font-bold inline-block p-[1em_2em] rounded-full whitespace-nowrap"
+            >I want to learn</a
+          >
+        </div>
+        <img
+          src="./nav-challenge (1)/img/hero-img.jpg"
+          alt=""
+          class="max-w-[100%] self-start"
+        />
+      </div>
+    </section>
+    <main class="p-[5em_0]">
+      <div class="w-[80%] max-w-[1000px] m-[0_auto]">
+        <div class="xl:flex xl:justify-between">
+          <section
+            class="text-[1rem] sm:text-[1.3rem] font-body font-normal space-y-5 xl:w-[55%] xl:self-start"
+          >
+            <h2
+              class="text-[2rem] sm:text-[2.8rem] text-[#87629a] font-body font-black leading-tight"
+            >
+              Quality designs made custom, on demand, just for you
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </section>
+          <aside
+            class="mt-[2em] text-center text-[1rem] sm:text-[1.3rem] text-white font-body font-normal bg-[#136C72] p-[1.5em] space-y-10 xl:w-[40%] xl:m-0"
+          >
+            <h2 class="text-[2rem] sm:text-[2.8rem] font-black">Cheap</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <h2 class="text-[2rem] sm:text-[2.8rem] font-black mb-[.5em]">
+              Quick
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <h2 class="text-[2rem] sm:text-[2.8rem] font-black mb-[.5em]">
+              Quality
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <script src="main1.js"></script>
+  </body>
+</html>

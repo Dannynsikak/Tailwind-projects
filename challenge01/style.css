@@ -1,0 +1,80 @@
+/* INSTRUCTIONS
+ *
+ * 1) Limit the total width of
+ *    the .intro-conent to about half
+ *    of it's parent
+ *
+ * 2) Stop the text from overflowing
+ *    out the bottom at small screen
+ *    widths
+ *
+ * You may modify the HTML if needed
+ *
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #23424a;
+  color: white;
+
+  width: 80%;
+
+  margin: 0 auto;
+  padding: 1em;
+  /* display: flex;
+  justify-content: center; */
+  display: flex;
+  justify-content: center;
+}
+.intro-content {
+  width: 40%;
+  background-color: blue;
+  padding: 2em;
+  max-width: 850px;
+}
+
+.okon {
+  width: 40%;
+  max-width: 850px;
+  padding: 2em;
+  background: red;
+}
+
+.see {
+  width: 80%;
+  padding: 1em;
+  margin: 0 auto;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  font-size: 2rem;
+  max-width: 600px;
+}
+
+span {
+  padding: 2em;
+  /* margin: 2em; */
+  background-color: blue;
+  /* max-width: 500px; */
+}
+
+table {
+  display: flex;
+}
+tr,
+td {
+  padding: 5em;
+}
+
+.alex {
+  display: flex;
+}

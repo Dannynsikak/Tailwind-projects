@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- nav-toggle {
+      cursor: pointer;
+      border: 0;
+      width: 2.5em;
+      height: 2.5em;
+      padding: 0em;
+      background-color: #072a2d;
+      border-radius: 50%;
+      color: white;
+      transition: opacity 250ms ease;
+      position: absolute;
+      left: 0.5em;
+    } -->
+
+    <!-- .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+      display: block;
+      margin: 0 auto;
+      height: 3px;
+      background: gainsboro;
+    }
+    .hamburger::before,
+    .hamburger::after {
+      content: "";
+      width: 100%;
+    }
+    .hamburger::before {
+      transform: translateY(-6px);
+    }
+
+    .hamburger::after {
+      transform: translateY(3px);]} -->
+    <!-- .nav-toggle {
+        cursor: pointer;
+        border: 0;
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0em;
+        background-color: #072a2d;
+        border-radius: 50%;
+        color: white;
+        transition: opacity 250ms ease;
+        position: absolute;
+        left: 0.5em; -->
+    <style>
+      .nav-toggle {
+        cursor: pointer;
+        border: 2px solid #ece4e1;
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0em;
+        /* background-color: ; */
+        border-radius: 30%;
+        color: white;
+        transition: opacity 250ms ease;
+        position: absolute;
+        right: 1em;
+        top: 1.5em;
+      }
+      .nav {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+      }
+      .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+      }
+
+      /* .hamburger {
+        width: 50%;
+        position: relative;
+        background-color: slategrey;
+      } */
+    </style>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="box-border text-[1.3rem]">
+    <header class="bg-[#824936] p-[2em_0]">
+      <div
+        class="w-[80%] max-w-[1000px] m-[0_auto] text-center md:flex md:justify-between md:items-center"
+      >
+        <button class="nav-toggle md:hidden" aria-label="open navigation">
+          <span
+            class="w-[50%] relative before:block before:m-[0_auto] before:h-[3px] before:bg-[#ece4e1] before:content-[''] before:w-[100%] before:transform before:translate-y-[9px] after:content-[''] after:w-[100%] after:block after:m-[0_auto] after:h-[3px] after:bg-[#ece4e1] after:transform after:translate-y-[-11px] block m-[0_auto] h-[3px] bg-[#ece4e1]"
+          >
+          </span>
+        </button>
+        <a href="#" class="inline-block"
+          ><img src="../nav-challenge/img/logo.svg" alt="nav logo"
+        /></a>
+        <nav
+          class="nav md:visible md:flex md:h-auto md:relative md:space-y-0 text-[1.5rem] text-[#ece4e1] font-body font-bold space-y-3"
+        >
+          <ul
+            class="space-y-2 md:mr-[1.5em] md:space-x-5 md:flex md:space-y-0 md:items-center"
+          >
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+          <ul
+            class="space-y-2 md:space-x-5 md:visible md:flex md:space-y-0 md:items-center whitespace-nowrap"
+          >
+            <li>sign in</li>
+            <li
+              class="inline-block p-[.5em_2em] rounded-full text-[#824936] bg-white"
+            >
+              sign up
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section
+      class="bg-[#F3EED9] min-h-[500px] sm:min-h-[660px] flex *:self-center text-center"
+    >
+      <div class="w-[80%] m-[0_auto] max-w-[1000px]">
+        <div>
+          <h1
+            class="uppercase font-body font-light text-[1rem] sm:text-[1.5rem]"
+          >
+            lorem ipsum sit
+          </h1>
+        </div>
+        <div>
+          <p
+            class="capitalize font-playfair font-black text-[2rem] sm:text-[4rem] leading-[1] text-[#824936]"
+          >
+            responsive layouts don’t have to be a struggle
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="p-[2em_0]">
+      <div class="wrapper w-[80%] m-[0_auto] max-w-[1000px]">
+        <div class="text-center mb-[.5em] *:m-0">
+          <h2
+            class="font-playfair font-black text-[2rem] sm:text-[2.5rem] text-[#824936] leading-[1]"
+          >
+            Quality Designs
+          </h2>
+        </div>
+        <div
+          class="font-body font-normal text-[1.3rem] space-y-5 md:space-y-0 md:flex md:*:w-[100%] md:gap-5"
+        >
+          <div class="">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
+              vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu
+              felis. Sociis natoque penatibus et magnis dis.
+            </p>
+          </div>
+          <div class="">
+            <p>
+              Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
+              amet luctus venenatis. Turpis in eu mi bibendum neque egestas
+              congue quisque egestas. Pellentesque sit amet porttitor eget dolor
+              morbi non.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="bg-[#222C2A] p-[2em_0]">
+      <div
+        class="wrapper w-[80%] m-[0_auto] max-w-[1000px] space-y-5 md:space-y-0 md:flex md:*:w-[100%] md:gap-5"
+      >
+        <div>
+          <h2
+            class="capitalize font-playfair font-black text-[2rem] sm:text-[2.5rem] text-[#F3EED9] leading-[1] mb-[.5em]"
+          >
+            made custom for you
+          </h2>
+          <p class="font-body font-normal text-[1.3rem] text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="self-end">
+          <img
+            src="../images/okoh.jpg"
+            alt=""
+            class="inline-block max-w[100%]"
+          />
+        </div>
+      </div>
+    </section>
+    <main class="bg-[#824936] p-[2em_0]">
+      <div
+        class="wrapper w-[80%] max-w-[1000px] m-[0_auto] space-y-5 md:space-y-0 md:flex md:*:w-[100%] md:gap-5"
+      >
+        <div class="self-end">
+          <img
+            src="../images/okoh1.jpg"
+            alt=""
+            class="inline-block max-w-[100%]"
+          />
+        </div>
+        <div>
+          <h2
+            class="capitalize font-playfair font-black text-[2rem] sm:text-[2.5rem] text-[#F3EED9] leading-[1] mb-[.5em]"
+          >
+            created with care
+          </h2>
+          <p class="font-body font-normal text-[1.3rem] text-white">
+            Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
+            amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue
+            quisque egestas. Pellentesque sit amet porttitor eget dolor morbi
+            non.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="main1.js"></script>
+  </body>
+</html>
